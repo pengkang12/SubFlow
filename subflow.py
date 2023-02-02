@@ -11,7 +11,7 @@ import argparse
 import importlib
 import shutil
 import time
-
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 #np.set_printoptions(threshold=np.nan)
 save_filename = os.path.splitext(os.path.basename(__file__))[0] + '.obj'
@@ -685,7 +685,7 @@ class SubFlowNetwork:
 					conv_parameter['weights'], stride_dim, what_to_conv,
 					where_to_conv, conv_len, activation)
 				output_biased = tf.multiply(tf.nn.bias_add(output,
-					conv_parameter['biases'], data_format='NCHW'),
+					conv_parameter['biases'], data_format='NHWC'),
 					tf.cast(activation, tf.float32))
 
 				print('output_biased', output_biased)
@@ -697,7 +697,7 @@ class SubFlowNetwork:
 
 				neuron = tf.nn.max_pool(activation,
 					ksize=[1, 1, k, k], strides=[1, 1, k, k],
-					padding='VALID', data_format='NCHW', name=neuron_name)
+					padding='VALID', data_format='NHWC', name=neuron_name)
 
 				neurons[layer_no] = neuron
 
