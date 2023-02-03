@@ -15,11 +15,11 @@ rm -rf network*
 rm -rf sub_network*
 rm subflow.obj
 
-python3 subflow.py -mode=c -layers='28*28*1,5*5*1*6,5*5*6*16,400,84,10'
-python3 subflow.py -mode=t -network_no=1 -data=mnist_data
+python subflow.py -mode=c -layers='28*28*1,5*5*1*6,5*5*6*16,400,84,10'
+python subflow.py -mode=t -network_no=1 -data=mnist_data
 
-python3 subflow.py -mode=ci -network_no=1 -data=mnist_data
+python subflow.py -mode=ci -network_no=1 -data=mnist_data
 
-python3 subflow.py -mode=sc -network_no=1
-python3 subflow.py -mode=st -subflow_network_no=1 -utilization=0 -data=mnist_data
-python3 subflow.py -mode=si -subflow_network_no=1 -utilization=0 -data=mnist_data
+python subflow.py -mode=sc -network_no=1
+python subflow.py -mode=st -subflow_network_no=1 -utilization=0 -data=mnist_data
+python subflow.py -mode=si -subflow_network_no=1 -utilization=0 -data=mnist_data

@@ -11,7 +11,7 @@ import argparse
 import importlib
 import shutil
 import time
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 #np.set_printoptions(threshold=np.nan)
 save_filename = os.path.splitext(os.path.basename(__file__))[0] + '.obj'

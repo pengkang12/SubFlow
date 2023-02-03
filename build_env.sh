@@ -1,6 +1,6 @@
 # pull docker from docker hub
-#docker pull nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04
-# docker run -it nvidia/cuda:10.0-cudnn7-devel-ubuntu18.04 /bin/bash
+#docker pull nvidia/cuda:10.2-cudnn8-devel-ubuntu18.04
+# docker run -it nvidia/cuda:10.2-cudnn8-devel-ubuntu18.04 /bin/bash
 
 apt update && apt install vim git python python-pip -y
 pip install --upgrade pip
