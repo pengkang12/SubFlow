@@ -8,11 +8,11 @@ This repository generates and executes an example deep neural network (DNN) that
 ## Software Install and Code Cloning
 SubFlow is implemented based on Python and TensorFlow. The TensorFlow version should be lower than or equal to 1.13.2; the latest version (1.14) seems to have a problem of executing custom operations. We used Tensorflow 1.13.1 and Python 2.7.
 
-**Step 1.** Install [Python (>= 2.7)](https://www.python.org/downloads/).
+**Step 1.** Install [Python (== 2.7)](https://www.python.org/downloads/).
 
-**Step 2.** Install [Tensorflow (<= 1.13.2)](https://www.tensorflow.org/).
+**Step 2.** Install [Tensorflow-GPU (<= 1.13.2)](https://www.tensorflow.org/).
 
-**Step 3.** Install [NVIDIA CUDA (>= 10.0)](https://developer.nvidia.com/cuda-downloads).
+**Step 3.** Install [NVIDIA CUDA (== 10.0)](https://developer.nvidia.com/cuda-downloads).
 
 **Step 4.** Clone this SubFlow repository.
 ```sh
