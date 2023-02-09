@@ -11,6 +11,9 @@
 #bash build_all.sh
 #cd ..
 
+
+# if run python, can't find some lib, export LB_LIBRARAY_PATH=""
+
 rm -rf network*
 rm -rf sub_network*
 rm subflow.obj
