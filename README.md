@@ -6,6 +6,9 @@ This Git repository provides the source code of ***SubFlow***, an [RTAS 2020](ht
 This repository generates and executes an example deep neural network (DNN) that is trained and inferred with SubFlow, i.e., [LeNet-5](http://yann.lecun.com/exdb/publis/pdf/lecun-01a.pdf) with [MNIST](http://yann.lecun.com/exdb/mnist/) dataset. The following steps show the procedure for the 'SubFlow LeNet-5 DNN', which consists of 1) computation of neuron importance, 2) generation of SubFlow DNN, 3) dynamic real-time training, and 4) dynamic real-time inference. For the reviewers' convenience, we provide a Python script (**subflow.py**) that automatically performs each step with simple command-line options.
 
 ## Software Install and Code Cloning
+
+Jeston nano: python3.6.9, Jetpack 4.3, cuda 10.0, tensorflow-gpu==1.13.1
+
 SubFlow is implemented based on Python and TensorFlow. The TensorFlow version should be lower than or equal to 1.13.2; the latest version (1.14) seems to have a problem of executing custom operations. We used Tensorflow 1.13.1 and Python 2.7.
 
 **Step 1.** Install [Python (== 2.7, 3.6.9)](https://www.python.org/downloads/).
